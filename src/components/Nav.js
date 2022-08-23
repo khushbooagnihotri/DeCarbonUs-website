@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 function Nav() {
@@ -10,7 +11,7 @@ function Nav() {
                     <span class="ml-3 text-xl">DeCarbonUs</span>
                 </a>
                 <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 hover:text-gray-900">Home</a>
+                    <Link to='/home' class="mr-5 hover:text-gray-900">Home</Link>
                     <a class="mr-5 hover:text-gray-900">Team</a>
                     <a class="mr-5 hover:text-gray-900">Contact</a>
                     <a class="mr-5 hover:text-gray-900">About Us</a>
