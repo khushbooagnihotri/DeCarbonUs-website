@@ -1,55 +1,91 @@
-import logo from './logo.svg';
 import './App.css';
+import { Redirect, Route ,  Switch } from 'react-router-dom';
+import { Fragment } from 'react';
+import CalculateEmission from './Pages/CalculateEmission'
+import HomePage from './Pages/HomePage';
+
+
+const DUMMY = [
+  {
+    id: 1,
+    question: "How often do you travel by air in a year ?",
+    options: ["I fly rarely", "Occasionally", "Regularly", "Never"],
+  },
+  {
+    id: 2,
+    question: "What describes your diet ?",
+    options: [
+      "Vegan",
+      "Vegetarian",
+      "Pescetarian",
+      "Ocassionaly eat meat",
+      "Regularly eat meat",
+    ],
+  },
+  {
+    id: 3,
+    question: "How much do you travel by car ?",
+    options: [
+      "I don't drive",
+      "~5000 km",
+      "~ 5,000 - 10000 km",
+      "~ 10,000 - 15,000 km",
+      ">15,000 km",
+    ],
+  },
+  {
+    id: 4,
+    question: "Which kind of fuel do you use ?",
+    options: ["Electric", "Natural gas", "Petrol, Disel"],
+  },
+  {
+    id: 5,
+    question: "Tell us something about your shopping habits ?",
+    options: ["Rarely", "Average", "Shopper", "Luxary Shopper"],
+  },
+  {
+    id: 6,
+    question: "How big is your home ?",
+    options: [
+      "Sharing",
+      "One-Bedroom",
+      "Two-bedroom",
+      "Three-bedroom",
+      "Bunglow",
+    ],
+  },
+  {
+    id: 7,
+    question: "How many people live in your home ?",
+    options: ["Just me", "2 people", "3 people", "4-6 people", " > 7 people"],
+  },
+  {
+    id: 8,
+    question: "Which pet do you own ?",
+    options: ["None", "Cat", "Dog", "Other"],
+  },
+  {
+    id: 9,
+    question: "Do you use renewable energy sources at your home ?",
+    options: ["Yes", "Not Yet", "Not Sure"],
+  },
+];
 
 function App() {
   return (
-    <section class="text-gray-600 body-font px-10">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h2 class="text-xs text-green-500 tracking-widest font-medium title-font mb-1">Let's get started</h2>
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Control your Carbon Footprint</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">DeCarbonUs is an App-based solution to help fight climate change by facilitating individuals to reduce and control their carbon footprint. Focused towards solving United nations SDGs</p>
-        </div>
-        <div class="flex flex-wrap">
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Analyze for C02 emission</h2>
-            <p class="leading-relaxed text-base mb-4">Answer some questions and get a instant report on your carbon footprint.</p>
-            <a href="#" class="text-green-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Get Personalized tracks</h2>
-            <p class="leading-relaxed text-base mb-4">Follow personalized tracks to offset your emisson and move towrds sustanablity</p>
-            <a href="#" class="text-green-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Connect with your friends</h2>
-            <p class="leading-relaxed text-base mb-4">Find your friends and learn how they contribute towards making this world a better place to live.</p>
-            <a href="#" class="text-green-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Explore local NGOs</h2>
-            <p class="leading-relaxed text-base mb-4">Want to contribute?. Explore local NGO events around you and help them as volunteers.</p>
-            <a href="#" class="text-green-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Fragment>
+    <Switch>
+      <Route path='/' exact>
+      <Redirect to='/home' />
+      </Route>
+      <Route path='/home' exact>
+      <HomePage/>
+      </Route>
+      <Route path='/calculate' exact>
+        <CalculateEmission questions={DUMMY}/>
+      </Route>
+    </Switch>
+    </Fragment>
   );
 }
 

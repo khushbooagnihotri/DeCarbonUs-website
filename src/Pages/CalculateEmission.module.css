@@ -1,0 +1,121 @@
+.container {
+  background-color: white;
+  width: 25%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.question p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.calculatebtn{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  list-style: none;
+  padding: 10px 20px;
+  background-color:rgb(12, 128, 236);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.calculatebtn:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.options {
+  margin: 0;
+  width: 100%;
+}
+.optionlist {
+  padding: 0;
+}
+.optionlist button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  list-style: none;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.optionlist button:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.optionlist button:focus {
+  background-color: rgb(176, 176, 176);
+  box-shadow:none;
+  color: white;
+}
+.buttonbox {
+  width: 100%;
+}
+.buttonnext {
+  float: right;
+}
+.buttonskip,
+.buttonnext {
+  padding: 12px 25px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(12, 128, 236);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.buttonskip:hover,
+.buttonnext:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2),
+    0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.buttonsubmit {
+  padding: 12px 25px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(12, 128, 236);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.buttonsubmit:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2),
+    0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.submitbox{
+    text-align: center;
+}
+.mainEmission{
+  text-align: center;
+  margin: 10px;
+}
+.mainEmission p,.mainEmission h1{
+  margin: 0;
+}
+.cbutton{
+  display: flex;
+  justify-content: space-between;
+}
+.cbutton button{
+  padding: 10px 20px;
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.homelink{
+  text-align: center;
+}
+.heading{
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 70%;
+  }
+}
