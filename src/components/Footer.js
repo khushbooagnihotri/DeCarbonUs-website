@@ -1,4 +1,5 @@
 import React from "react";
+import AppLogo from '../images/logo.png';
 
 function Footer() {
     return (
@@ -6,7 +7,7 @@ function Footer() {
             <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                 <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                     <a class="px-3 flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://raw.githubusercontent.com/Rohit-RA-2020/Solution-Challenge/master/decarbonus/assets/images/logo.png" alt="Website logo" />
+                        <img class="w-10 h-10 rounded-full" src={AppLogo} alt="Website logo" />
                         <span class="ml-3 text-xl">DeCarbonUs</span>
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.rohitranjan.decarbonus&hl=en_IN&gl=US" target="_blank">
