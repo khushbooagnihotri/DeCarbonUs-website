@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import db from "../Firebase";
+import DCU from "../images/dcu.png";
 
 function Hero() {
   const [email, SetEmail] = useState("");
@@ -105,7 +106,7 @@ function Hero() {
           <img
             class="h-100"
             alt="App Photos"
-            src="https://raw.githubusercontent.com/Rohit-RA-2020/Solution-Challenge/master/images/DeCarbonUs1.png"
+            src={DCU}
           />
         </div>
       </div>
