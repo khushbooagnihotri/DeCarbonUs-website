@@ -174,9 +174,7 @@ const CalculateEmission = (props) => {
         </div>
       )}
       <div className={classes.homelink}>
-        <Link  to="/home">
-          back to home..
-        </Link>
+        <Link to="/home">back to home..</Link>
       </div>
     </Fragment>
   );

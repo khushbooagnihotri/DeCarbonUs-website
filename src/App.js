@@ -1,9 +1,9 @@
-import './App.css';
-import { Redirect, Route ,  Switch } from 'react-router-dom';
-import { Fragment } from 'react';
-import CalculateEmission from './Pages/CalculateEmission'
-import HomePage from './Pages/HomePage';
-
+import "./App.css";
+import { Redirect, Route, Switch } from "react-router-dom";
+import { Fragment } from "react";
+import CalculateEmission from "./Pages/CalculateEmission";
+import HomePage from "./Pages/HomePage";
+import Tracks from "./components/Tracks";
 
 const DUMMY = [
   {
@@ -74,17 +74,20 @@ const DUMMY = [
 function App() {
   return (
     <Fragment>
-    <Switch>
-      <Route path='/' exact>
-      <Redirect to='/home' />
-      </Route>
-      <Route path='/home' exact>
-      <HomePage/>
-      </Route>
-      <Route path='/calculate' exact>
-        <CalculateEmission questions={DUMMY}/>
-      </Route>
-    </Switch>
+      <Switch>
+        <Route path="/" exact>
+          <Redirect to="/home" />
+        </Route>
+        <Route path="/home" exact>
+          <HomePage />
+        </Route>
+        <Route path="/calculate" exact>
+          <CalculateEmission questions={DUMMY} />
+        </Route>
+        <Route path="/tracks" exact>
+          <Tracks />
+        </Route>
+      </Switch>
     </Fragment>
   );
 }
