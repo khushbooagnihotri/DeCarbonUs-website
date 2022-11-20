@@ -1,14 +1,20 @@
 .container {
-  background-color: white;
+  background-color: rgb(44, 43, 43);
   width: 25%;
   margin: 50px auto;
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .question p {
   font-size: 18px;
   font-weight: bold;
+  background-color: rgb(44, 43, 43);
+  color: white;
+}
+*{
+  background-color:rgb(17 24 39);
 }
 .calculatebtn{
   display: block;
@@ -31,14 +37,16 @@
 }
 .optionlist {
   padding: 0;
+  background-color: rgb(44, 43, 43);
 }
 .optionlist button {
   display: block;
+  color: white;
   width: 100%;
   margin: 10px 0;
   list-style: none;
   padding: 10px 20px;
-  background-color: white;
+  background-color: rgb(96, 92, 92);
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -47,12 +55,13 @@
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .optionlist button:focus {
-  background-color: rgb(176, 176, 176);
+  background-color: rgb(146, 146, 146);
   box-shadow:none;
   color: white;
 }
 .buttonbox {
   width: 100%;
+  background-color: rgb(44, 43, 43);
 }
 .buttonnext {
   float: right;
@@ -63,7 +72,7 @@
   border: none;
   color: white;
   border-radius: 5px;
-  background-color: rgb(12, 128, 236);
+  background-color: rgb(0, 169, 0);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .buttonskip:hover,
@@ -76,7 +85,7 @@
   border: none;
   color: white;
   border-radius: 5px;
-  background-color: rgb(12, 128, 236);
+  background-color: rgb(0, 169, 0);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .buttonsubmit:hover {
@@ -85,33 +94,47 @@
 }
 .submitbox{
     text-align: center;
+    background-color: rgb(44, 43, 43);
 }
 .mainEmission{
   text-align: center;
   margin: 10px;
+  
 }
 .mainEmission p,.mainEmission h1{
   margin: 0;
+  background-color: rgb(44, 43, 43);
+  color: white;
+}
+.distribution{
+  margin: 10px;
+}
+.distribution p, .distribution p b{
+  background-color: rgb(44, 43, 43);
+  color: white;
 }
 .cbutton{
   display: flex;
   justify-content: space-between;
+  background-color: rgb(44, 43, 43);
 }
 .cbutton button{
   padding: 10px 20px;
-  background-color: green;
+  background-color: rgb(0, 128, 0);
   border: none;
   color: white;
   border-radius: 10px;
 }
 .homelink{
   text-align: center;
+  color: rgb(0, 128, 0);
 }
 .heading{
   margin-top: 50px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  color: white;
 }
 
 @media only screen and (max-width: 700px) {

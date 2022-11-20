@@ -83,6 +83,7 @@ const CalculateEmission = (props) => {
 
   return (
     <Fragment>
+      <div className={classes.main}>
       <div className={classes.heading}>
         <h1>Calculate your carbon footprint</h1>
       </div>
@@ -176,6 +177,8 @@ const CalculateEmission = (props) => {
       <div className={classes.homelink}>
         <Link to="/home">back to home..</Link>
       </div>
+      </div>
+
     </Fragment>
   );
 };
